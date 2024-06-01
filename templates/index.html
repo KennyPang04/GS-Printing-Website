@@ -1,0 +1,53 @@
+<!-- index.html -->
+{% extends "base.html" %}
+{% block title %} GS Printing {% endblock %}
+
+{% block css %} 
+<link rel="stylesheet" href="static/css/index.css"> 
+{% endblock %}
+
+{% block content %}
+<img src="static/images/background.jpg" alt="background">
+<div>
+    <div>
+        <img src="static/images/store_front.png" alt="store">
+    </div>
+
+    <section> 
+        <h1> Welcome to GS Printing </h1>
+        <p>
+           We are a small business  
+        </p>
+
+        <h1> Location </h1>
+        <a href="https://maps.app.goo.gl/CCX4MsTfzeZU7y6bA"> 35-30B Farrington St, Flushing, NY 11354 </a>
+
+        <h1> Contact us! </h1>
+        <p>
+            Gmail: gsprtny@gmail.com
+            <br> 
+            Phone #: (718) 463-5218 
+        </p>
+        <h1> Schedule </h1>
+        <p>
+            Monday ....... 10AM-6PM
+            <br>
+            Tuesday ....... 10AM-6PM
+            <br> 
+            Wednesday ..... 10AM-6PM
+            <br>
+            Thursday ..... 10AM-6PM
+            <br>
+            Friday ..... 10AM-6PM
+            <br>
+            Saturday ..... 10AM-5PM
+            <br>
+            Sunday ..... Closed
+        </p>
+    </section>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="static/js/sliding_display.js"></script>
+{% endblock %}

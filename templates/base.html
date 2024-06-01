@@ -1,0 +1,50 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to GS Printing NY Incoported website, we are located in Flushing NY">
+
+        <title> {% block title %}{% endblock %} </title>
+        <link rel="icon" type="image/x-icon" href="static/images/GS_logo.png">
+        <link rel="stylesheet" href="static/css/base.css">
+        {% block css %}{% endblock %}
+    </head>
+
+    <body>
+        <!-- Navbar Portion -->
+        <nav>
+            <div class="left_side">
+                <a href="/"> 
+                    <img src="static/images/GS_logo.png" alt="Logo">
+                </a>
+                <h4>
+                    GS Printing NY Inc.
+                </h4>
+            </div>
+
+            <div class="right_side">
+                <a href="/"> Home </a>
+                <a href="/about"> About </a>
+                <a href="/products"> Products </a>
+                <a href="/designs"> Designs </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    
+        <!-- Footer Portion -->
+        <footer>
+            <p>
+                Copyright © 2024 GS Printing NY Inc. developed by Kenneth Pang
+            </p>
+        </footer>
+
+        <!-- JavaScript Content -->
+        {% block script %}{% endblock %}
+    </body>
+</html>
